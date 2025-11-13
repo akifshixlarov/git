@@ -18,15 +18,6 @@ else
 fi
 
 # 6️⃣ PATH dəyişikliklərini tətbiq et
-if [ -n "$BASH_VERSION" ]; then
-  source "$BASHRC"
-elif [ -n "$ZSH_VERSION" ]; then
-  source "$ZSHRC"
-else
-  # fallback
-  if [ -f "$BASHRC" ]; then
-    source "$BASHRC"
-  elif [ -f "$ZSHRC" ]; then
-    source "$ZSHRC"
-  fi
-fi
+source ~/.bashrc
+source ~/.zshrc
+
